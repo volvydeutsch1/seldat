@@ -1,8 +1,8 @@
 <?php session_start();
 echo $_SERVER["PHP_SELF"];
-if(!isset($_SESSION['username']) && $_SERVER["PHP_SELF"] != "http://www.seldat.ca/createLoginBlackJack.php" && $_SERVER["PHP_SELF"] != "http://www.seldat.ca/loginBlackJack.php"){
-    //header("Location:loginBlackJack.php");
-    //exit();
+if(!isset($_SESSION['username']) && $_SERVER["PHP_SELF"] != "/createLoginBlackJack.php" && $_SERVER["PHP_SELF"] != "/loginBlackJack.php"){
+    header("Location:loginBlackJack.php");
+    exit();
 }
 if(isset($_POST['logOut'])){
     unset($_SESSION['username']);
