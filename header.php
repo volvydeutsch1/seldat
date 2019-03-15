@@ -1,5 +1,5 @@
 <?php session_start();
-if(!isset($_SESSION['username']) && $_SERVER["PHP_SELF"] != "/blackjack/createLoginBlackJack.php" && $_SERVER["PHP_SELF"] != "/blackjack/loginBlackJack.php"){
+if(!isset($_SESSION['username']) && $_SERVER["PHP_SELF"] != "http://www.seldat.ca/createLoginBlackJack.php" && $_SERVER["PHP_SELF"] != "http://www.seldat.ca/loginBlackJack.php"){
     header("Location:loginBlackJack.php");
     exit();
 }
