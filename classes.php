@@ -4,10 +4,10 @@ class database{
     
     public function createPdo()
     {
-        $host = 'localhost:81';
-        $user = 'root';
-        $password = '';
-        $dbname = 'blackJack';
+        $host = 'localhost';
+        $user = 'bd82a3aaacf1b9';
+        $password = 'd5348c66';
+        $dbname = 'heroku_a7b62c6e74af4ee';
         // Set DSN
         $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
         // Create a PDO instance
