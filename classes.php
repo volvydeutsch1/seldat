@@ -4,7 +4,7 @@ class database{
     
     public function createPdo()
     {
-        $host = 'localhost';
+        $host = 'us-cdbr-iron-east-03.cleardb.net';
         $user = 'bd82a3aaacf1b9';
         $password = 'd5348c66';
         $dbname = 'heroku_a7b62c6e74af4ee';
